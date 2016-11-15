@@ -1,0 +1,14 @@
+body{
+/*  font-family: 'Source Code Pro', monospace;*/
+font-family: 'Gloria Hallelujah', cursive !important;
+}
+.mdl-layout__header{
+  position: fixed;
+}
+.mdl-layout-title{
+  font-size: 30px !important;
+  font-family: 'Gloria Hallelujah', cursive !important;
+}
+.mdl-navigation__link{
+  font-size: 20px !important;
+}
