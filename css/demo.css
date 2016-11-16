@@ -1,0 +1,21 @@
+body {
+
+	background: white;
+	color: #fff;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	font-weight: 300;
+}
+.container{
+	padding-top: 100px;
+}
+a {
+	color: rgba(0,0,0,0.4);
+	text-decoration: none;
+	outline: none;
+}
+
+a:hover,
+a:focus {
+	color: #fff;
+}

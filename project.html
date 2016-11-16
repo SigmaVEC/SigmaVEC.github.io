@@ -39,10 +39,12 @@
     <script src="mdl/material.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-
-  
     <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
 
+    <!--Effects -->
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <script src="js/modernizr.custom.js"></script>
 <!--styles-->
 <style>
 /*page loader*/
@@ -80,7 +82,27 @@
 <!-- nav bar ends-->
 <div id="something">
 
+  <div class="container">
+
+
+<ul id="elasticstack" class="elasticstack">
+  <li><img src="images/project.jpg" alt="01"/><h5>Project 1</h5></li>
+  <li><img src="images/project.jpg" alt="02"/><h5>Project 2</h5></li>
+  <li><img src="images/project.jpg" alt="03"/><h5>Project 3</h5></li>
+  <li><img src="images/project.jpg" alt="04"/><h5>Project 4</h5></li>
+  <li><img src="images/project.jpg" alt="05"/><h5>Project 5</h5></li>
+  <li><img src="images/project.jpg" alt="06"/><h5>Project 6</h5></li>
+</ul>
+
+</div><!-- /container -->
+
 </div>
 <script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script src="js/draggabilly.pkgd.min.js"></script>
+  <script src="js/elastiStack.js"></script>
+  <script>
+    new ElastiStack( document.getElementById( 'elasticstack' ) );
+  </script>
 </body>
 </html>
