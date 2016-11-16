@@ -30,9 +30,7 @@
     <!-- Your custom styles (optional) -->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/common.css" rel="stylesheet">
-    <!--fonts-->
-    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+  
 
     <!-- material design-->
     <link rel="stylesheet" href="mdl/material.min.css">
@@ -43,9 +41,12 @@
 
 
     <!--font-->
-    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
-    <script src="jquery.flip.min.js"></script>
+
+    <!-- Transitions -->
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/magic.min.css" rel="stylesheet">
+    <script src="js/main.js"></script>
 
 <!--styles-->
 <style>
@@ -53,35 +54,6 @@
 .container-fluid{
   padding-top: 150px;
 
-}
-.container-fluid > .row{
-  padding: 80px;
-  padding-top: 0px;
-}
- .front>.col-sm-4{
-        background-color: #80ced6;
-        height: 250px;
-        width:350px;
-        color: black;
-        font-size: 30px;
-        text-align: center;
-        padding-top: 35px;
-        box-shadow: 10px 10px 5px #b2b2b2;
-}
-.back>.col-sm-4{
-       background-color: #80ced6;
-       height: 250px;
-       width: 350px;
-       color: black;
-       font-size: 30px;
-       text-align: center;
-       padding: 35px;
-       box-shadow: 10px 10px 5px #b2b2b2;
-}
-
-.col-sm-4 :hover {
-          box-shadow: none;
-          cursor: pointer;
 }
 .circle > img{
     border-radius:50%;
@@ -91,7 +63,6 @@
     margin-top: 20px;
 
   }
-
   /*page loader*/
   #loaderGif{
   	position: absolute;
@@ -128,80 +99,57 @@
 <!--nav bar ends-->
 <div id="something">
 
-<div class="container-fluid">
-<h1 style="margin-top:-60px;text-align:center;font-family: 'Gloria Hallelujah', cursive !important;">We Are !</h1>
+  <div class="container-fluid">
+      <h1 style="margin-top:-60px;text-align:center;font-family: 'Gloria Hallelujah', cursive !important;">We Are !</h1>
+<!-- magic animation-->
+          <div class="box">
+              <div class="box-content">
+                  <div class="box-wrapper">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                  </div><!-- box-wrapper ends-->
+              </div><!-- box-content ends-->
+              <div class="box-overlay magictime" data-hover="tinLeftOut" data-return="tinLeftIn">
 
-<div class="row hideOverflow">
-<div class="flip col-sm-4" style="position:relative;">
-      <div class="front">
-              <div class="col-sm-4">
-                <span>Mobile Developer</span>
-                <span><div class="circle"><img src="images/app.png"></div></span>
-            </div>
-          </div>
-          <div class="back">
-                  <div class="col-sm-4">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                  </div>
-          </div>
-</div>
-<div class="flip2 col-sm-4" style="position:relative;">
-      <div class="front">
-              <div class="col-sm-4">
-                <span>Web Developer</span>
-                <span><div class="circle"><img src="images/web.png"></div></span>
-              </div>
-          </div>
-          <div class="back">
-                  <div class="col-sm-4">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                  </div>
-          </div>
-</div>
-<div class="flip3 col-sm-4" style="position:relative;">
-      <div class="front">
-              <div class="col-sm-4">
-                <span>System Admin</span>
-                <span><div class="circle"><img src="images/sys.jpeg"></div></span>
-              </div>
-          </div>
-          <div class="back">
-                  <div class="col-sm-4">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                  </div>
-          </div>
-</div>
+                <span><center>Mobile Developer</center></span>
+                <span><center><div class="circle"><img src="images/app.png"></div></center></span>
+
+              </div><!-- box-overlay ends-->
+          </div><!-- box ends-->
 
 
+          <div class="box">
+              <div class="box-content">
+                  <div class="box-wrapper">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                  </div><!-- box-wrapper ends-->
+              </div><!-- box-content ends-->
+              <div class="box-overlay magictime" data-hover="tinUpOut" data-return="tinUpIn">
 
+                <span><center>Web Developer</center></span>
+                <span><center><div class="circle"><img src="images/web.png"></div></center></span>
+
+              </div><!-- box-overlay ends-->
+          </div><!-- box ends-->
+
+
+          <div class="box">
+              <div class="box-content">
+                  <div class="box-wrapper">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                  </div><!-- box-wrapper ends-->
+              </div><!-- box-content ends-->
+              <div class="box-overlay magictime" data-hover="tinRightOut" data-return="tinRightIn">
+
+                <span><center>System Admin</center></span>
+                <span><center><div class="circle"><img src="images/sys.jpeg"></div></center></span>
+
+              </div><!-- box-overlay ends-->
+          </div><!-- box ends-->
+
+  </div><!-- container fluid ends-->
+</div><!-- something-->
+
+<!--magic animation ends-->
 <script type="text/javascript" src="js/common.js"></script>
-
-<script>
-$(function(){
-    $(".flip").flip({
-        trigger: 'click',
-        axis: 'x',
-        speed :1000,
-        reverse: true
-    });
-});
-$(function(){
-    $(".flip2").flip({
-      trigger: 'click',
-      axis: 'x',
-      speed :1000,
-      reverse: true
-    });
-});
-$(function(){
-    $(".flip3").flip({
-      trigger: 'click',
-      axis: 'x',
-      speed :1000,
-      reverse: true
-    });
-});
-
-</script>
 </body>
 </html>
