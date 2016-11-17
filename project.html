@@ -56,6 +56,28 @@
    padding-top: 200px;
    background-color: #FFFFFF;
  }
+ /* notification */
+
+
+  #notification{
+    height:40px;
+    position:fixed;
+    bottom:0%;
+    width:100%;
+    display:none;
+    z-index:15;
+    opacity:0.8;
+
+  }
+  #notificationArea{
+    padding: 10px;
+    background-color:#222;
+    color:#FFF;
+    text-align: center;
+    border-radius: 10px 10px 0px 0px;
+    font-size: 20px;
+
+  }
 
 </style>
 </head>
@@ -85,7 +107,7 @@
   <div class="container">
 
 
-<ul id="elasticstack" class="elasticstack">
+<ul id="elasticstack" class="elasticstack" onmouseover="notify('Click & Drag image !')">
   <li><img src="images/project.jpg" alt="01"/><h5>Project 1</h5></li>
   <li><img src="images/project.jpg" alt="02"/><h5>Project 2</h5></li>
   <li><img src="images/project.jpg" alt="03"/><h5>Project 3</h5></li>
@@ -96,6 +118,15 @@
 
 </div><!-- /container -->
 
+<!-- notificationArea-->
+<div id="notification" class="container-fluid">
+    <div class="row">
+        <div class="col-lg-4"></div>
+        <div class="col-lg-4" id="notificationArea"></div>
+        <div class="col-lg-4"></div>
+    </div>
+ </div><!-- notificationArea ends-->
+
 </div>
 <script type="text/javascript" src="js/common.js"></script>
 <script type="text/javascript" src="js/common.js"></script>
@@ -103,6 +134,11 @@
   <script src="js/elastiStack.js"></script>
   <script>
     new ElastiStack( document.getElementById( 'elasticstack' ) );
+
+    function notify(s) {
+        $("#notificationArea").html(s);
+        $('#notification').slideDown(500).delay(1000).slideUp(500);
+    }
   </script>
 </body>
 </html>
