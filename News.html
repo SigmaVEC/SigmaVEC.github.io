@@ -40,8 +40,9 @@
 
     <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
 
-
-
+<link rel="stylesheet" href="css/owl.carousel.css" >
+<link rel="stylesheet" href="css/owl.theme.css" >
+<script src="js/owl.carousel.js"></script>
 
 <!--styles-->
 <style>
@@ -54,6 +55,29 @@
    padding-top: 200px;
    background-color: #FFFFFF;
  }
+
+
+
+     #owl-demo .item{
+       display: block;
+       cursor: pointer;
+       background: #00bcd4;
+       padding: 30px 0px;
+       margin: 5px;
+       color: #FFF;
+       -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+       border-radius: 3px;
+       text-align: center;
+       -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+     }
+     #owl-demo .item:hover{
+       background: #757575;
+     }
+     #owl-demo{
+       padding-left: 50px;
+       padding-right: 50px;
+     }
 
 </style>
 </head>
@@ -98,7 +122,55 @@
 
 <div id="something">
 
+
+<div class="container" style="height:200px;padding-top:70px;">
+  <center>
+    <h1 style=" font-family: 'Gloria Hallelujah', cursive !important;">Upcoming Events!</h1>
+  </center>
+</div>
+<div class="container" style="height:50px;"></div>
+<div id="owl-demo" class="owl-carousel">
+  <a class="item link">
+      <h1 style=" font-family: 'Gloria Hallelujah', cursive !important;font-size:50px;">Event 1</h1>
+        <p style="font-size:20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+  </a>
+  <a class="item link">
+      <h1 style=" font-family: 'Gloria Hallelujah', cursive !important;font-size:50px;">Event 2</h1>
+        <p style="font-size:20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+  </a>
+  <a class="item link">
+      <h1 style=" font-family: 'Gloria Hallelujah', cursive !important;font-size:50px;">Event 3</h1>
+        <p style="font-size:20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+  </a>
+  <a class="item link">
+      <h1 style=" font-family: 'Gloria Hallelujah', cursive !important;font-size:50px;">Event 4</h1>
+        <p style="font-size:20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+  </a>
+</div>
+
+
+
+
 </div>
 <script type="text/javascript" src="js/common.js"></script>
+<script>
+
+
+    $(document).ready(function() {
+
+      $("#owl-demo").owlCarousel({
+        items : 1,
+        autoPlay : true,
+        paginationNumbers:true,
+        stopOnHover : true,
+        paginationSpeed : 800,
+        autoHeight :true
+      });
+
+    });
+
+
+</script>
+
   </body>
 </html>
